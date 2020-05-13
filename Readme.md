@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Мария Баринова](https://up.htmlacademy.ru/htmlcss/28/user/1315955).
-* Наставник: `Неизвестно`.
+* Наставник: [Павел Бубликов](https://htmlacademy.ru/profile/pbuba).
 
 ---
 
