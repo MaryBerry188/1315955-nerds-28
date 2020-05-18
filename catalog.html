@@ -6,10 +6,8 @@
   </head>
   <body>
     <header>
-      <section>
-        <h1>Веб-студия Нёрдс</h1>
+        <h1>Интернет магазин «Nerds»</h1>
         <a href="index.html">Nerds</a>
-      </section>
       <nav>
         <ul>
           <li><a href="#">Студия</a></li>
@@ -18,20 +16,22 @@
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
-      <a href="">Корзина</a>
-      <h2>Добро пожаловать в магазин готовых макетов</h2>
+      <ul>
+        <li><a href="">Корзина</a></li>
+      </ul>
     </header>
     <main>
-      <aside>
+      <h2>Магазин готовых шаблонов</h2>
+      <section>
         <form method="get" action="https://echo.htmlacademy.ru">
-          <h3>Сетка:</h3>
-            <input type="radio" name="adaptive" id="adaptive" value="adaptive" checked>
+          <legend>Сетка:</legend>
+            <input type="radio" name="grid" id="adaptive" value="adaptive" checked>
             <label  for="adaptive">Адаптивная</label>
-            <input type="radio" name="fixed" id="fixed" value="fixed">
+            <input type="radio" name="grid" id="fixed" value="fixed">
             <label  for="fixed">Фиксированная</label>
-            <input type="radio" name="rubber" id="rubber" value="rubber">
+            <input type="radio" name="grid" id="rubber" value="rubber" >
             <label for="rubber">Резиновая</label>
-          <h3>Особенности:</h3>
+          <legend>Особенности:</legend>
             <input type="checkbox" name="slider" id="slider" value="slider" checked>
             <label for="slider">Слайдер</label>
             <input type="checkbox"  name="advantages" id="advantages" value="advantages" >
@@ -44,40 +44,41 @@
             <label for="cart">Корзина</label>
             <button  type="submit" >Показать</button>
         </form>
-      </aside>
+      </section>
       <section>
-        <h4>Список доступных шаблонов</h4>
-          <div>
-            <img src="img/sedona.png" width="362" height="580" alt="Sedona">
-            <a href="">Sedona</a>
-            <p>Информационный сайт<br>для туристов</p>
+        <h3>Список доступных шаблонов</h3>
+          <ul>
+            <li>
+              <img src="img/sedona.png" width="362" height="580" alt="Sedona">
+              <a href="">Sedona</a>
+              <p>Информационный сайт для туристов</p>
+              <button type="button" class="btn">9900 руб.</button>
+            </li>
+            <li>
+              <img src="img/pink.png" width="362" height="580" alt="PINK">
+              <a href="#">Pink app</a>
+              <button type="button" class="btn">9900 руб.</button>
+            </li>
+            <li>
+              <img src="img/barbershop.png" width="362" height="580" alt="BORODINSKI">
+              <a href="#">Borodinski</a>
+              <button type="button" class="btn">9900 руб.</button>
+            </li>
+            <li>
+              <img src="img/mishka.png" width="362" height="580" alt="MISHKA">
+              <a href="#">Mishka</a>
+              <button type="button" class="btn">9900 руб.</button>
+            </li>
+            <li>
+              <img src="img/aplus.png" width="362" height="580" alt="A+">
+              <a href="#">A plus</a>
             <button type="button" class="btn">9900 руб.</button>
-          </div>
-          <div>
-            <img src="img/pink.png" width="362" height="580" alt="PINK">
-            <a href="#">Pink app</a>
-            <button type="button" class="btn">9900 руб.</button>
-          </div>
-          <div>
-            <img src="img/barbershop.png" width="362" height="580" alt="BORODINSKI">
-            <a href="#">Borodinski</a>
-            <button type="button" class="btn">9900 руб.</button>
-          </div>
-          <div>
-            <img src="img/mishka.png" width="362" height="580" alt="MISHKA">
-            <a href="#">Mishka</a>
-            <button type="button" class="btn">9900 руб.</button>
-          </div>
-          <div>
-            <img src="img/aplus.png" width="362" height="580" alt="A+">
-            <a href="#">A plus</a>
-            <button type="button" class="btn">9900 руб.</button>
-          </div>
-          <div>
-            <img src="img/kvast.png" width="362" height="580" alt="Кваст">
-            <a href="#">Кваст</a>
-            <button type="button" class="btn">9900 руб.</button>
-          </div>
+            </li>
+            <li>
+              <img src="img/kvast.png" width="362" height="580" alt="Кваст">
+              <a href="#">Кваст</a>
+              <button type="button" class="btn">9900 руб.</button>
+            </li>
       </section>
     </main>
     <footer>
