@@ -6,47 +6,44 @@
   </head>
   <body>
     <header>
-        <h1>Интернет магазин «Nerds»</h1>
         <a href="index.html">Nerds</a>
       <nav>
         <ul>
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li><a href="">Магазин</a></li>
+          <li><a>Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="">Корзина</a></li>
-      </ul>
+      <a href="">Корзина</a>
     </header>
     <main>
-      <h2>Магазин готовых шаблонов</h2>
-      <section>
+      <h1>Магазин готовых шаблонов</h1>
         <form method="get" action="https://echo.htmlacademy.ru">
-          <legend>Сетка:</legend>
-            <input type="radio" name="grid" id="adaptive" value="adaptive" checked>
-            <label  for="adaptive">Адаптивная</label>
-            <input type="radio" name="grid" id="fixed" value="fixed">
-            <label  for="fixed">Фиксированная</label>
-            <input type="radio" name="grid" id="rubber" value="rubber" >
-            <label for="rubber">Резиновая</label>
-          <legend>Особенности:</legend>
-            <input type="checkbox" name="slider" id="slider" value="slider" checked>
-            <label for="slider">Слайдер</label>
-            <input type="checkbox"  name="advantages" id="advantages" value="advantages" >
-            <label for="advantages">Блок преимуществ</label>
-            <input type="checkbox" name="news"  id="news"  value="news" checked>
-            <label for="news">Новости</label>
-            <input type="checkbox" name="gallery" id="gallery"  value="gallery">
-            <label for="gallery">Галлерея</label>
-            <input type="checkbox" name="cart" id="cart" value="cart">
-            <label for="cart">Корзина</label>
-            <button  type="submit" >Показать</button>
+          <fieldset>
+            <legend>Сетка:</legend>
+              <input type="radio" name="grid" id="adaptive" value="adaptive" checked>
+              <label  for="adaptive">Адаптивная</label>
+              <input type="radio" name="grid" id="fixed" value="fixed">
+              <label  for="fixed">Фиксированная</label>
+              <input type="radio" name="grid" id="rubber" value="rubber" >
+              <label for="rubber">Резиновая</label>
+            <legend>Особенности:</legend>
+              <input type="checkbox" name="slider" id="slider" value="slider" checked>
+              <label for="slider">Слайдер</label>
+              <input type="checkbox"  name="advantages" id="advantages" value="advantages" >
+              <label for="advantages">Блок преимуществ</label>
+              <input type="checkbox" name="news"  id="news"  value="news" checked>
+              <label for="news">Новости</label>
+              <input type="checkbox" name="gallery" id="gallery"  value="gallery">
+              <label for="gallery">Галлерея</label>
+              <input type="checkbox" name="cart" id="cart" value="cart">
+              <label for="cart">Корзина</label>
+              <button  type="submit" >Показать</button>
+            </fieldset>
         </form>
-      </section>
       <section>
-        <h3>Список доступных шаблонов</h3>
+        <h2>Список доступных шаблонов</h2>
           <ul>
             <li>
               <img src="img/sedona.png" width="362" height="580" alt="Sedona">
