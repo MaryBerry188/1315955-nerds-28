@@ -6,7 +6,7 @@
   </head>
   <body>
     <header>
-        <a href="index.html">Nerds</a>
+        <a href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Nerds"></a>
       <nav>
         <ul>
           <li><a href="#">Студия</a></li>
@@ -21,6 +21,12 @@
       <h1>Магазин готовых шаблонов</h1>
         <form method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
+            <legend>Стоимость:</legend>
+            <input type="range" min="1" max="15000">
+              <label>от<input type="text" name="min-price" value="0"></label>
+              <label>до<input type="text" name="max-price" value="15 000"></label>
+          </fieldset>
+          <fieldset>
             <legend>Сетка:</legend>
               <input type="radio" name="grid" id="adaptive" value="adaptive" checked>
               <label  for="adaptive">Адаптивная</label>
@@ -28,6 +34,8 @@
               <label  for="fixed">Фиксированная</label>
               <input type="radio" name="grid" id="rubber" value="rubber" >
               <label for="rubber">Резиновая</label>
+            </fieldset>
+            <fieldset>
             <legend>Особенности:</legend>
               <input type="checkbox" name="slider" id="slider" value="slider" checked>
               <label for="slider">Слайдер</label>
@@ -46,36 +54,42 @@
         <h2>Список доступных шаблонов</h2>
           <ul>
             <li>
-              <img src="img/sedona.png" width="362" height="580" alt="Sedona">
+              <img src="img/catalog/sedona.jpg" width="362" height="580" alt="Sedona">
               <a href="">Sedona</a>
               <p>Информационный сайт для туристов</p>
               <button type="button" class="btn">9900 руб.</button>
             </li>
             <li>
-              <img src="img/pink.png" width="362" height="580" alt="PINK">
+              <img src="img/catalog/pink.jpg" width="362" height="580" alt="PINK">
               <a href="#">Pink app</a>
+              <p>Продуктовый лендинг приложения для iOS и Android</p>
               <button type="button" class="btn">9900 руб.</button>
             </li>
             <li>
-              <img src="img/barbershop.png" width="362" height="580" alt="BORODINSKI">
+              <img src="img/catalog/borodinski.jpg" width="362" height="580" alt="BORODINSKI">
               <a href="#">Borodinski</a>
+              <p>Сайт салона красоты. Для мужчин, да.</p>
               <button type="button" class="btn">9900 руб.</button>
             </li>
             <li>
-              <img src="img/mishka.png" width="362" height="580" alt="MISHKA">
+              <img src="img/catalog/mishka.jpg" width="362" height="580" alt="MISHKA">
               <a href="#">Mishka</a>
+              <p>Интернет-магазин вязаных игрушек</p>
               <button type="button" class="btn">9900 руб.</button>
             </li>
             <li>
-              <img src="img/aplus.png" width="362" height="580" alt="A+">
+              <img src="img/catalog/aplus.jpg" width="362" height="580" alt="A+">
               <a href="#">A plus</a>
+              <p>Лендинг курсов повышения квалификации</p>
             <button type="button" class="btn">9900 руб.</button>
             </li>
             <li>
-              <img src="img/kvast.png" width="362" height="580" alt="Кваст">
+              <img src="img/catalog/kvast.jpg" width="362" height="580" alt="Кваст">
               <a href="#">Кваст</a>
+              <p>Промо-сайт производителя крафтового кваса</p>
               <button type="button" class="btn">9900 руб.</button>
             </li>
+          </ul>
       </section>
     </main>
     <footer>
