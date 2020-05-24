@@ -39,7 +39,7 @@
       </section>
     -->
       <section>
-        <h2>Услуги</h2>
+        <h2 class="visually-hidden">Услуги</h2>
         <ul>
           <li>
             <article>
@@ -71,7 +71,6 @@
       </section>
       <section>
         <h4>Описание компании</h4>
-        <!--
         <div>
           <p>Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -96,7 +95,7 @@
         </div>
       </section>
       <section>
-        <h4>Наши клиенты</h4>
+        <h4 class="visually-hidden">Наши клиенты</h4>
         <ul>
           <li>
             <a href="https://htmlacademy.ru/intensive/htmlcss" >
@@ -119,7 +118,15 @@
             </a>
           </li>
         </ul>
-      -->
+      </section>
+        <section>
+        <h5 class="visually-hidden">Как к нам добраться</h5>
+        <div>
+          <p>Nёrds Design Studio</p>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел.+7 (812) 275-75-75</p>
+          <a href="#">Напишите нам</a>
+        </div>
       </section>
     </main>
     <footer>
@@ -135,5 +142,25 @@
       <p>Скидка 10% для друзей из социальных сетей.</p>
      </div>
    </footer>
+   <section>
+      <h5 class="visually-hidden">Форма обратной связи</h5>
+      <span>Напишите нам</span>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div>
+          <label class="feedback-form" for="user-name">Ваше имя:</label>
+          <input type="text" name="user-name" id="user-name" placeholder="Имя Фамилия" required>
+        </div>
+        <div>
+          <label class="feedback-form" for="user-message">Ваш email:</label>
+          <input type="email" name="user-email" id="user-email" placeholder="email@example.com" required>
+        </div>
+        <div>
+          <label class="feedback-form" for="user-message">Текст письма:</label>
+          <textarea name="user-message" id="user-message"  placeholder="В свободной форме" required></textarea>
+        </div>
+        <button type="submit">Отправить</button>
+        <button type="button" aria-label="Кнопка закрыть"></button>
+      </form>
+    </section>
   </body>
 </html>
