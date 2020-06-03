@@ -27,7 +27,7 @@
     min-width: 1160px;
     font-family: Roboto, Arial, sans-serif;
     color: var(--basic-black);
-    background: var(--basic-white)
+    background-color: var(--basic-white)
   }
 
   a {
@@ -45,10 +45,11 @@
   }
 
   .pege-header {
-    background: var(--basic-white-grey);
+    background-color: var(--basic-white-grey);
   }
 
-  .header-nav-item {
+  .pege-navigation,
+  .basket {
     font-weight: 500;
     font-size: 16px;
     line-height: 30px;
@@ -57,13 +58,18 @@
     background-color: var(--basic-white-grey);
   }
 
-  .header-nav-item :focus {
+
+  .pege-navigation:hover {
     color: var(--basic-coral);
   }
 
-  .header-nav-item :active {
-    color: color: var(--basic-black);
+  .pege-navigation:focus {
+    color: var(--basic-black);
     opacity: 0.3;
+  }
+
+  .pege-navigation:active {
+    color: var(--basic-black);
   }
 
   .slider-slogan {
@@ -82,7 +88,7 @@
     font-size: 16px;
     text-transform: uppercase;
     color: var(--basic-white);
-    background: var(--basic-coral);
+    background-color: var(--basic-coral);
     border-radius: 3px;
   }
 
@@ -107,15 +113,15 @@
   }
 
   .red {
-    background: var(--basic-coral);
+    background-color: : var(--basic-coral);
   }
 
   .green {
-    background: var(--basic-green);
+    background-color: : var(--basic-green);
   }
 
   .yellow {
-    background: var(--basic-yellow);
+    background-color: : var(--basic-yellow);
   }
 
   .about-us-title {
@@ -170,7 +176,7 @@
    text-transform: uppercase;
  }
 
- .company-addres,
+ .company-address,
  .company-phone {
    font-size: 16px;
    line-height: 18px;
@@ -183,7 +189,7 @@
    font-size: 16px;
    text-transform: uppercase;
    color: var(--basic-white);
-   background: var(--basic-coral);
+   background-color: var(--basic-coral);
    border-radius: 3px;
    border: none;
  }
@@ -230,7 +236,8 @@
   color: var(--basic-dark-grey);
 }
 
-.sort-link {
+.sort-link,
+.arrow {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -241,7 +248,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  background: var(--basic-white-grey);
+  background-color: var(--basic-white-grey);
   border: none;
 }
 
@@ -268,7 +275,7 @@
   font-size: 16px;
   text-transform: uppercase;
   color: var(--basic-white);
-  background: var(--basic-coral);
+  background-color: var(--basic-coral);
   border-radius: 3px;
 }
 
@@ -277,7 +284,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  background: var(--basic-white-grey);
+  background-color: var(--basic-white-grey);
   border-radius: 3px;
 }
 
@@ -305,7 +312,7 @@
   font-size: 16px;
   text-transform: uppercase;
   color: var(--basic-white);
-  background: var(--basic-coral);
+  background-color: var(--basic-coral);
   border-radius: 3px;
   border: none;
 }
