@@ -3,11 +3,19 @@
     --basic-black: #000000;
     --basic-dark-grey: #283136;
     --basic-white-grey: #EEEEEE;
+    --basic-medium-grey:#DFDFDF;
+    --basic-grey-dark: #D5D5D5;
     --basic-grey: #666666;
     --basic-light-grey: #444444;
     --basic-coral: #FB565A;
+    --basic-medium-coral: #E74246;
+    --basic-dark-coral: #D7373B;
     --basic-green: #00CA74;
+    --basic-medium-green: #00BC6C;
+    --basic-dark-green: #00AA62;
     --basic-yellow: #EFC849;
+    --basic-medium-yellow: #EAB534;
+    --basic-dark-yellow: #E5A722;
     --basic-white: #ffffff;
     --special: #E1E1E1;
   }
@@ -23,11 +31,19 @@
   overflow: hidden;
 }
 
-  body {
-    min-width: 1160px;
-    font-family: Roboto, Arial, sans-serif;
-    color: var(--basic-black);
-    background-color: var(--basic-white)
+/* Общие стили */
+body {
+  min-width: 1160px;
+  font-family: Roboto, Arial, sans-serif;
+  color: var(--basic-black);
+  background-color: var(--basic-white)
+  }
+
+  .wrapper {
+    width: 1157px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    margin: 0 auto;
   }
 
   a {
@@ -35,21 +51,63 @@
       color: var(--basic-black);
     }
 
-  ul {
-    list-style: none;
-  }
 
   img {
     max-width: 100%;
     height: auto;
   }
 
-  .pege-header {
+  .service-list,
+  .order-title-list,
+  .client-list,
+  .social-list,
+  .page-list {
+    list-style: none;
+  }
+
+/*кнопки общие*/
+  .button {
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+    background-color: var(--basic-coral);
+    border-radius: 3px;
+    border: none;
+    display: inline-block;
+  }
+
+  .button:hover {
+    background-color: var(--basic-medium-coral)
+  }
+
+  .button:active {
+    background-color: var(--basic-dark-coral);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  }
+
+/*header и навигация*/
+  .page-header {
     background-color: var(--basic-white-grey);
   }
 
-  .pege-navigation,
-  .basket {
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .logo:active {
+    opacity: 0.3;
+  }
+
+  .header-nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-nav-link {
     font-weight: 500;
     font-size: 16px;
     line-height: 30px;
@@ -59,17 +117,22 @@
   }
 
 
-  .pege-navigation:hover {
+  .page-nav-link:hover {
     color: var(--basic-coral);
   }
 
-  .pege-navigation:focus {
+  .page-nav-link:focus {
     color: var(--basic-black);
     opacity: 0.3;
   }
 
-  .pege-navigation:active {
+  .page-nav-link:active {
     color: var(--basic-black);
+  }
+
+/* слайдер*/
+  .slider {
+    background-color: var(--basic-white-grey);
   }
 
   .slider-slogan {
@@ -83,16 +146,8 @@
     line-height: 24px;
   }
 
-  .slider-button {
-    font-weight: 500;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: var(--basic-white);
-    background-color: var(--basic-coral);
-    border-radius: 3px;
-  }
 
-
+/*Услуги*/
   .service-title {
     font-size: 24px;
     line-height: 30px;
@@ -104,26 +159,47 @@
    line-height: 24px;
   }
 
-  .service-button {
-    font-weight: 500;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: var(--basic-white);
+/*кнопки-ссылки к услугам*/
+  .button-red {
+    background-color: var(--basic-coral);
+  }
+
+  .button-red:active {
+    background: #D7373B;
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
     border-radius: 3px;
   }
 
-  .red {
-    background-color: : var(--basic-coral);
+  .button-green {
+    background-color: var(--basic-green);
   }
 
-  .green {
-    background-color: : var(--basic-green);
+  .button-green:hover {
+    background-color: var(--basic-medium-green);
   }
 
-  .yellow {
-    background-color: : var(--basic-yellow);
+  .button-green:active {
+    background-color: var(--basic-dark-green);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    border-radius: 3px;
   }
 
+  .button-yellow {
+    background-color: var(--basic-yellow);
+  }
+
+  .button-yellow:hover {
+    background-color: var(--basic-medium-yellow);
+  }
+
+  .button-yellow:active {
+    background-color: var(--basic-dark-yellow);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    border-radius: 3px;
+  }
+
+
+/*Описание Компании*/
   .about-us-title {
     font-weight: 500;
    font-size: 45px;
@@ -150,6 +226,7 @@
    color: var(--basic-dark-grey);
  }
 
+/*таблица*/
  .table-description {
    font-weight: bold;
    font-size: 16px;
@@ -169,6 +246,21 @@
    color: var(--basic-dark-grey);
  }
 
+
+/*логотипы клиентов*/
+.client-logo {
+   opacity: 0.2;
+}
+
+ .client-logo:hover {
+   opacity: 2.0;
+}
+
+ .client-logo:active {
+   opacity: 0.1;
+}
+
+/*Адресс и контакты компании*/
  .company-name {
    font-weight: bold;
    font-size: 18px;
@@ -183,17 +275,7 @@
    color: var(--basic-grey);
  }
 
- .red-button {
-   font-weight: 500;
-   line-height: 18px;
-   font-size: 16px;
-   text-transform: uppercase;
-   color: var(--basic-white);
-   background-color: var(--basic-coral);
-   border-radius: 3px;
-   border: none;
- }
-
+/*соцсети*/
 .footer-slogan {
   font-weight: bold;
   font-size: 36px;
@@ -236,6 +318,7 @@
   color: var(--basic-dark-grey);
 }
 
+
 .sort-link,
 .arrow {
   font-size: 14px;
@@ -243,13 +326,27 @@
   text-transform: uppercase;
 }
 
-.filter-button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
+.filter-button,
+.page-link {
+  color: var(--basic-black);
   background-color: var(--basic-white-grey);
-  border: none;
+}
+
+.filter-button,
+.page-link:hover {
+  background-color: var(--basic-medium-grey);
+}
+
+.pfilter-button,
+.page-link:focus {
+  background-color: var(--basic-grey-dark);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.pfilter-button,
+.page-link:active {
+  background-color: var(--basic-grey-dark);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .catalog-item-card {
@@ -270,14 +367,6 @@
   color: var(--basic-grey);
 }
 
-.button-price-red {
-  font-weight: 500;
-  font-size: 16px;
-  text-transform: uppercase;
-  color: var(--basic-white);
-  background-color: var(--basic-coral);
-  border-radius: 3px;
-}
 
 .page-link {
   font-weight: 500;
@@ -304,15 +393,4 @@
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-light-grey);
-}
-
-.modal-button {
-  font-weight: 500;
-  line-height: 18px;
-  font-size: 16px;
-  text-transform: uppercase;
-  color: var(--basic-white);
-  background-color: var(--basic-coral);
-  border-radius: 3px;
-  border: none;
 }
