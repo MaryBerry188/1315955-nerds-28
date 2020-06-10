@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="pege-header">
-      <nav class="header-nav">
+    <header class="page-header">
+      <nav class="header-nav wrapper">
       <a class="logo"><img src="img/nerds-logo.svg" width="160" height="65" alt="Nerds">
       </a>
 
         <ul class="header-nav-list">
-          <li class="header-nav-item"><a class="pege-navigation" href="#">Студия</a></li>
-          <li class="header-nav-item"><a class="pege-navigation" href="#">Клиенты</a></li>
-          <li class="header-nav-item"><a class="pege-navigation" href="catalog.html">Магазин</a></li>
-          <li class="header-nav-item"><a class="pege-navigation" href="#">Контакты</a></li>
-          <li class="header-nav-item"><a class="basket" href="">Корзина</a></li>
+          <li class="header-nav-item"><a class="page-nav-link" href="#">Студия</a></li>
+          <li class="header-nav-item"><a class="page-nav-link" href="#">Клиенты</a></li>
+          <li class="header-nav-item"><a class="page-nav-link" href="catalog.html">Магазин</a></li>
+          <li class="header-nav-item"><a class="page-nav-link" href="#">Контакты</a></li>
+          <li class="header-nav-item"><a class="page-nav-link basket-link" href="">Корзина</a></li>
         </ul>
       </nav>
     </header>
@@ -27,13 +27,13 @@
     <main>
       <h1 class="visually-hidden">Сайт веб-студии Нёрдс</h1>
 
-      <section class="slider">
+      <section class="slider wrapper">
         <div class="slider-item">
           <p class="slider-slogan">Долго, дорого, скрупулезно.</p>
           <p class="slider-description">Математически выверенный дизайн
             для вашего сайта или мобильного приложения.</p>
           <img src="img/index1.png" width="760" height="431" alt="">
-          <a class="slider-button" href="">Узнать больше</a>
+          <a class="button" href="">Узнать больше</a>
         </div>
 
         <div class="slider-item">
@@ -41,7 +41,7 @@
           <p class="slider-description">Никакого креатива, только математические формулы
              для расчета идеальных пропорций</p>
              <img src="img/index2.png " width="760" height="431" alt="">
-          <a class="slider-button" href="">Узнать больше</a>
+          <a class="button" href="">Узнать больше</a>
         </div>
 
         <div class="slider-item">
@@ -49,28 +49,30 @@
           <p class="slider-description">Работать днем, как все? Мы против этого.
              Ближе к полуночи работа только начинается.</p>
              <img src="img/index3.png " width="760" height="431" alt="">
-          <a class="slider-button" href="">Узнать больше</a>
+          <a class="button" href="">Узнать больше</a>
         </div>
-
+<!-- добавить текст label для кнопок-->
         <div class="button-slider">
   				<input type="radio" name="slider" id="slider-1" checked="checked">
-  				<label for="slider-1"></label>
+  				<label for="slider-1" aria-label="Первый слайд"></label>
+
   				<input type="radio" name="slider" id="slider-2">
-  				<label for="slider-2"></label>
-  				<label for="slider-3"></label>
+  				<label for="slider-2" aria-label="Первый слайд"></label>
+
   				<input type="radio" name="slider" id="slider-3">
+          <label for="slider-2" aria-label="Первый слайд"></label>
   			</div>
       </section>
 
-      <section class="services">
+      <section class="services wrapper">
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="service-list">
-          <li class="service-item">
+          <li class="service-list-item">
             <article>
               <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
               <h3 class="service-title">Веб-сайты</h3>
               <p class="service-description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-              <a class="service-button red" href="#">Заказать</a>
+              <a class="button button-red" href="#">Заказать</a>
             </article>
           </li>
 
@@ -79,7 +81,7 @@
               <img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
               <h3 class="service-title">Приложения</h3>
               <p class="service-description">Покорите топ-10 приложений в<br>AppStore и Google Play</p>
-              <a class="service-button green" href="#">Заказать</a>
+              <a class="button button-green" href="#">Заказать</a>
             </article>
           </li>
 
@@ -88,14 +90,14 @@
               <img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
               <h3 class="service-title">Презентации</h3>
               <p class="service-description">Вы даже не представляете,<br>насколько вы изумительны!</p>
-              <a class="service-button yellow" href="#">Заказать</a>
+              <a class="button button-yellow" href="#">Заказать</a>
             </article>
           </li>
         </ul>
       </section>
 
-      <section class="company-description">
-        <h4 class="visually-hidden">Описание компании</h4>
+      <section class="company-description wrapper">
+        <h2 class="visually-hidden">Описание компании</h2>
         <div class="about-company">
           <p class="about-us-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
           <p class="about-us-text">Исповедуем принципы минимализма и чистоты.
@@ -113,41 +115,48 @@
           <img src="img/nerds.png" width="360" height="208" alt="логотип дизайн-студии Нёрдс">
           <table class="advantages-table">
           <caption class="table-description">с 2004 года Любим точность во всем:</caption>
-            <tr><td class="table-td">146%</td>
-              <td class="table-td">100%</td>
-              <td class="table-td">50%</td></tr>
+          <thead>
             <tr>
               <th class="table-th">Уровень самоотдачи</th>
               <th class="table-th">Соблюдение сроков</th>
               <th class="table-th">Минимальная предоплата</th>
             </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="table-td">146%</td>
+              <td class="table-td">100%</td>
+              <td class="table-td">50%</td>
+            </tr>
+          </tbody>
         </table>
         </div>
       </section>
 
-      <section class="client">
-        <h4 class="visually-hidden">Наши клиенты</h4>
+      <section class="client wrapper">
+        <h2 class="visually-hidden">Наши клиенты</h2>
         <ul class="client-list">
+
           <li class="client-item">
-            <a href="https://htmlacademy.ru/intensive/htmlcss" >
+            <a class="client-logo" href="https://htmlacademy.ru/intensive/htmlcss" >
               <img src="img/logo-academy.svg" width="199" height="68" alt="Логотип HTML-Academy">
             </a>
           </li>
 
           <li class="client-item">
-            <a href="#">
+            <a class="client-logo" href="#">
               <img src="img/logo-borodinski.svg" width="209" height="90" alt="Логотип Barbershop Borodinski">
             </a>
           </li>
 
           <li class="client-item">
-            <a href="#">
+            <a class="client-logo" href="#">
               <img src="img/logo-pink.svg" width="185" height="52" alt="Логотип Pink">
             </a>
           </li>
 
           <li class="client-item">
-            <a href="#">
+            <a class="client-logo" href="#">
               <img src="img/logo-mishka.svg" width="173" height="84" alt="Логотип Mishka">
             </a>
           </li>
@@ -156,32 +165,45 @@
       </main>
 
      <footer class="page-footer">
-      <section class="addres">
+      <section class="addres wrapper">
         <h2 class="visually-hidden">Как к нам добраться</h2>
         <div class="company-contacts">
           <p class="company-name">Nёrds Design Studio</p>
           <p class="company-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <a class="company-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-          <a class="red-button" href="#">Напишите нам</button>
+          <a class="button red-button" href="#">Напишите нам</button>
         </div>
       </section>
 
-      <div class="social">
+      <div class="social wrapper">
         <ul class="social-list">
-          <li><a class="social-item vk" href="#">ВКонтакте</a></li>
-          <li><a class="social-item fb" href="#">Фейсбук</a></li>
-          <li><a class="social-item inst" href="#">Инстаграм</a></li>
+          <li class="social-item">
+            <a class="social-item link-vk" href="blank.html" aria-label="Наш паблик ВКонтакте">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-item link-fb" href="blank.html" aria-label="Дружите с нами в Facebook">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-item link-inst" href="blank.html" aria-label="Смотрите наши работы в Instagram">
+              <span class="visually-hidden">Инстаграм</span>
+
+            </a>
+          </li>
        </ul>
      </div>
 
-     <div class="friends">
+     <div class="friends wrapper">
       <p class="footer-slogan">Давайте дружить, это выгодно!</p>
       <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
      </div>
    </footer>
 
 
-   <section class="modal">
+   <section class="modal wrapper">
       <h2 class="modal-name">Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
 
@@ -200,7 +222,7 @@
           <textarea name="user-message" id="user-message"  placeholder="В свободной форме" required></textarea>
         </div>
 
-        <button class="modal-button" type="submit">Отправить</button>
+        <button class="button modal-button" type="submit">Отправить</button>
         <button type="button" aria-label="Кнопка закрыть">Закрыть</button>
       </form>
     </section>

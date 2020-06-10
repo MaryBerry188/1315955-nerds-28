@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="pege-header">
+  <header class="page-header">
     <nav class="header-nav">
     <a class="logo" href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Nerds">
     </a>
 
       <ul class="header-nav-list">
-        <li class="header-nav-item"><a class="pege-navigation" href="#">Студия</a></li>
-        <li class="header-nav-item"><a class="pege-navigation" href="#">Клиенты</a></li>
-        <li class="header-nav-item"><a class="pege-navigation">Магазин</a></li>
-        <li class="header-nav-item"><a class="pege-navigation" href="#">Контакты</a></li>
-        <li class="header-nav-item"><a class="basket" href="">Корзина</a></li>
+        <li class="header-nav-item"><a class="page-nav-link" href="#">Студия</a></li>
+        <li class="header-nav-item"><a class="page-nav-link" href="#">Клиенты</a></li>
+        <li class="header-nav-item"><a class="page-nav-link">Магазин</a></li>
+        <li class="header-nav-item"><a class="page-nav-link" href="#">Контакты</a></li>
+        <li class="header-nav-item"><a class="page-nav-link basket-link" href="">Корзина</a></li>
       </ul>
     </nav>
   </header>
@@ -60,7 +60,7 @@
         <input type="checkbox" name="cart" id="cart" value="cart">
         <label for="cart" class="catalog-filter">Корзина</label>
       </fieldset>
-      <button  type="submit" class="filter-button">Показать</button>
+      <button  type="submit" class="button filter-button">Показать</button>
     </form>
 
     <section class="catalog">
@@ -84,7 +84,7 @@
           <div class="catalog-item-card">
             <p class="catalog-item-name">Sedona</p>
             <p class="catalog-item-description">Информационный сайт для туристов</p>
-            <span class="button-price-red">9900 &#8381;</span>
+            <span class="button button-price-red">9900 &#8381;</span>
           </div>
         </a>
       </article>
@@ -98,7 +98,7 @@
           <div class="catalog-item-card">
             <p class="catalog-item-name">Pink app</p>
             <p class="catalog-item-description">Продуктовый лендинг приложения для iOS и Android</p>
-            <span class="button-price-red">9900 &#8381;</span>
+            <span class="button button-price-red">9900 &#8381;</span>
           </div>
         </a>
       </article>
@@ -112,7 +112,7 @@
           <div class="catalog-item-card">
             <p class="catalog-item-name">Borodinski</p>
             <p class="catalog-item-description">Сайт салона красоты. Для мужчин, да.</p>
-            <span class="button-price-red">9900 &#8381;</span>
+            <span class="button button-price-red">9900 &#8381;</span>
           </div>
         </a>
       </article>
@@ -126,7 +126,7 @@
           <div class="catalog-item-card">
             <p class="catalog-item-name">Mishka</p>
             <p class="catalog-item-description">Интернет-магазин вязаных игрушек</p>
-            <span class="button-price-red">9900 &#8381;</span>
+            <span class="button button-price-red">9900 &#8381;</span>
           </div>
         </a>
       </article>
@@ -140,7 +140,7 @@
           <div class="catalog-item-card">
             <p class="catalog-item-name">A plus</p>
             <p class="catalog-item-description">Лендинг курсов повышения квалификации</p>
-            <span class="button-price-red">9900 &#8381;</span>
+            <span class="button button-price-red">9900 &#8381;</span>
           </div>
         </a>
       </article>
@@ -154,7 +154,7 @@
           <div class="catalog-item-card">
             <p class="catalog-item-name">Кваст</p>
             <p class="catalog-item-description">Промо-сайт производителя крафтового кваса</p>
-            <span class="button-price-red">9900 &#8381;</span>
+            <span class="button button-price-red">9900 &#8381;</span>
           </div>
         </a>
       </article>
@@ -177,16 +177,28 @@
         <p class="company-name">Nёrds Design Studio</p>
         <p class="company-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <a class="company-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-        <a class="red-button" href="#">Напишите нам</button>
+        <a class="button red-button" href="#">Напишите нам</button>
       </div>
     </section>
 
     <div class="social">
       <ul class="social-list">
-        <li><a class="social-item vk" href="#">ВКонтакте</a></li>
-        <li><a class="social-item fb" href="#">Фейсбук</a></li>
-        <li><a class="social-item inst" href="#">Инстаграм</a></li>
-     </ul>
+          <li class="social-item">
+            <a class="social-item link-vk" href="blank.html" aria-label="Наш паблик ВКонтакте">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-item link-fb" href="blank.html" aria-label="Дружите с нами в Facebook">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-item link-inst" href="blank.html" aria-label="Смотрите наши работы в Instagram">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+        </ul>
    </div>
 
    <div class="friends">
@@ -215,7 +227,7 @@
         <textarea class="form-example" name="user-message" id="user-message"  placeholder="В свободной форме" required></textarea>
       </div>
 
-      <button class="modal-button" type="submit">Отправить</button>
+      <button class="button modal-button" type="submit">Отправить</button>
       <button type="button" aria-label="Кнопка закрыть">Закрыть</button>
     </form>
   </section>
