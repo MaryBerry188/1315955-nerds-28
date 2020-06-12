@@ -36,7 +36,9 @@ body {
   min-width: 1160px;
   font-family: Roboto, Arial, sans-serif;
   color: var(--basic-black);
-  background-color: var(--basic-white)
+  background-color: var(--basic-white);
+  margin: 0;
+  padding: 0;
   }
 
   .wrapper {
@@ -61,7 +63,9 @@ body {
   .order-title-list,
   .client-list,
   .social-list,
-  .page-list {
+  .page-list,
+  .header-nav-list,
+  .slider-list {
     list-style: none;
   }
 
@@ -86,25 +90,43 @@ body {
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   }
 
-/*header и навигация*/
-  .page-header {
-    background-color: var(--basic-white-grey);
-  }
 
+/*header и навигация*/
   .header-nav {
     display: flex;
     justify-content: space-between;
+  }
 
+  .header-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    align-self: center;
+  }
+
+  .header-nav-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 45px;
+    box-sizing: border-box;
+  }
+
+  .basket-link {
+    margin-left: 200px;
+  }
+  .logo:active {
+    opacity: 0.3;
+  }
+  .page-header {
+    padding: 0;
+    margin: 0;
+    background-color: var(--basic-white-grey);
   }
 
   .logo:active {
     opacity: 0.3;
-  }
-
-  .header-nav-list {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
   }
 
   .page-nav-link {
@@ -131,11 +153,23 @@ body {
   }
 
 /* слайдер*/
-  .slider {
+  .slider-list {
+    padding: 0;
+    margin: 0;
     background-color: var(--basic-white-grey);
   }
 
+  .slider {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .slider1 {
+    background-image: url(../img/index1.png);
+  }
+
   .slider-slogan {
+    min-width: 538px;
     font-weight: 500;
     font-size: 55px;
     line-height: 55px;
@@ -146,32 +180,59 @@ body {
     line-height: 24px;
   }
 
+  .button-slider {
+    display: flex;
+  }
+
 
 /*Услуги*/
+  .service-list {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    gap: 100px;
+  }
+
+  .service-list-item {
+    display: flex;
+    flex-direction: column;
+  }
+
   .service-title {
+    width: 169px;
     font-size: 24px;
     line-height: 30px;
     text-transform: uppercase;
+    margin-bottom: 16px;
+    font-weight: bold;
   }
 
   .service-description {
    font-size: 16px;
    line-height: 24px;
+   margin-top: 0;
+   margin-bottom: 32px;
+   padding-right: 20px;
   }
 
 /*кнопки-ссылки к услугам*/
   .button-red {
+    display: inline-block;
+    padding: 16px 40px;
     background-color: var(--basic-coral);
   }
 
   .button-red:active {
-    background: #D7373B;
+    background-color: var(--basic-dark-coral);
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
     border-radius: 3px;
   }
 
   .button-green {
     background-color: var(--basic-green);
+    display: inline-block;
+    padding: 16px 40px;
   }
 
   .button-green:hover {
@@ -186,6 +247,8 @@ body {
 
   .button-yellow {
     background-color: var(--basic-yellow);
+    display: inline-block;
+    padding: 16px 40px;
   }
 
   .button-yellow:hover {
@@ -200,13 +263,21 @@ body {
 
 
 /*Описание Компании*/
+  .company-description {
+    margin-top: 39px;
+    display: flex;
+    justify-content: space-between;
+  }
+
   .about-us-title {
+    width: 651px;
     font-weight: 500;
-   font-size: 45px;
-   line-height: 45px;
+    font-size: 45px;
+    line-height: 45px;
  }
 
  .about-us-text {
+   width: 646px;
    font-size: 16px;
    line-height: 24px;
    color: var(--basic-dark-grey);
@@ -248,6 +319,11 @@ body {
 
 
 /*логотипы клиентов*/
+.client-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .client-logo {
    opacity: 0.2;
 }
@@ -261,7 +337,20 @@ body {
 }
 
 /*Адресс и контакты компании*/
+.company-contacts {
+  background-image: url("..img/map1.jpg");
+}
+
+ .company-contacts {
+   background-color: var(--basic-white);
+   background-size: width="319px" height="308";
+   display: flex;
+   flex-direction: column;
+
+ }
+
  .company-name {
+   width: 193px;
    font-weight: bold;
    font-size: 18px;
    line-height: 30px;
@@ -270,9 +359,15 @@ body {
 
  .company-address,
  .company-phone {
+   width: 230px;
    font-size: 16px;
    line-height: 18px;
    color: var(--basic-grey);
+ }
+
+ .address-button {
+   width: 219px;
+   height: 50px;
  }
 
 /*соцсети*/
@@ -294,6 +389,8 @@ body {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
+  background-color: var(--basic-white-grey);
+
 }
 
 .price,
