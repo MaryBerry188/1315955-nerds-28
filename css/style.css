@@ -122,6 +122,11 @@ body {
   .basket-link {
     margin-left: 200px;
   }
+
+.basket {
+  padding-right: 25px;
+}
+
   .logo:active {
     opacity: 0.3;
   }
@@ -572,16 +577,38 @@ body {
 
 
 /*catalog*/
-.catalog-title {
-  font-weight: 500;
-  font-size: 55px;
-  line-height: 55px;
+
+.main-page-catalog {
+  display: grid;
+  grid-template-columns: 260px 760px;
+  column-gap: 140px;
+  grid-template-rows: min-content min-content min-content;
+  padding-top: 56px;
+  padding-bottom: 60px;
+}
+.main-catalog {
+  height: 235px;
+
   background-color: var(--basic-white-grey);
 
 }
 
+.catalog-title {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  padding-top: 72px;
+  padding-left: 210px;
+}
+
+.features-filter {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  border: none;
+}
 .price,
-.features-filter,
+.features-filter-title,
 .sort {
   font-weight: bold;
   font-size: 18px;
@@ -600,6 +627,9 @@ body {
   line-height: 22px;
   text-transform: uppercase;
   color: var(--basic-dark-grey);
+  align-items: flex-start;
+  margin-bottom: 54px;
+  box-sizing: border-box;
 }
 
 
@@ -633,9 +663,77 @@ body {
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
+
+.catalog-sort {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sort-list-link {
+  display: flex;
+  justify-content: space-between;;
+}
+
+/*карточки каталога*/
+.catalog {
+  display: grid;
+  outline-offset: -2px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.catalog-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-list-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.catalog-item::before {
+  display: block;
+  width: 360px;
+  height: 40px;
+  content: "";
+  background-image: url("../img/browser.svg");
+  background-repeat: no-repeat;
+  background-size: 360px 40px;
+  background-position: center;
+  opacity: 0.12;
+}
+
+.catalog-item:hover .catalog-item-card
+.catalog-item:focus .catalog-item-card  {
+  display: block;
+  object-fit: cover;
+}
+
+.catalog-item:hover::before,
+.catalog-item:focus::before {
+  opacity: 1;
+}
+
 .catalog-item-card {
   width: 360px;
+  height: 231px;
   background: var(--basic-white-grey);
+  position: absolute;
+  display: none;
+  padding: 27px 50px 40px;
+  min-height: 230px;
+  box-sizing: border-box;
 }
 
 .catalog-item-name {
