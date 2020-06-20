@@ -18,30 +18,31 @@
         <li class="header-nav-item"><a class="page-nav-link" href="#">Клиенты</a></li>
         <li class="header-nav-item"><a class="page-nav-link">Магазин</a></li>
         <li class="header-nav-item"><a class="page-nav-link" href="#">Контакты</a></li>
-        <li class="header-nav-item"><a class="page-nav-link basket-link" href="">Корзина</a></li>
+        <li class="header-nav-item"><a class="page-nav-link basket-link" href="">
+          <img class="basket" src="img/cart-icon.svg" width="15" height="15">Корзина</a></li>
       </ul>
     </nav>
   </header>
 
 
   <main class="page-main">
-    <div class="catalog-title">
+    <div class="main-catalog">
       <h1 class="catalog-title wrapper">Магазин готовых шаблонов</h1>
     </div>
-    <section class="wrapper">
-      <h2 class="visually-hidden">Магазин готовых шаблонов</h2>
+    <section class="main-page-catalog wrapper">
+      <h2 class="visually-hidden">Фильтр готовых шаблонов</h2>
     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
 
       <fieldset>
         <legend class="price">Стоимость:</legend>
         <div>
-          <label class="price-filter">от<input class="price-filter" type="text" name="min-price" placeholder="0"></label>
-          <label class="price-filter">до<input class="price-filter" type="text" name="max-price" placeholder="15 000"></label>
+          <label class="price-filter">от<input class="price-filter" type="number" name="min-price" min="0" max="20000" value="0"></label>
+          <label class="price-filter">до<input class="price-filter" type="number" name="max-price" min="0" max="20000" value="15000"></label>
         </div>
       </fieldset>
 
-      <fieldset>
-        <legend class="features-filter">Сетка:</legend>
+      <fieldset class="features-filter">
+        <legend class="features-filter-title">Сетка:</legend>
         <input type="radio" name="grid" id="adaptive" value="adaptive" checked>
         <label  for="adaptive" class="catalog-filter">Адаптивная</label>
         <input type="radio" name="grid" id="fixed" value="fixed">
@@ -50,8 +51,8 @@
         <label for="rubber" class="catalog-filter">Резиновая</label>
       </fieldset>
 
-      <fieldset>
-        <legend class="features-filter">Особенности:</legend>
+      <fieldset class="features-filter">
+        <legend class="features-filter-title">Особенности:</legend>
         <input type="checkbox" name="slider" id="slider" value="slider" checked>
         <label for="slider" class="catalog-filter">Слайдер</label>
         <input type="checkbox"  name="advantages" id="advantages" value="advantages" >
@@ -66,10 +67,11 @@
       <button  type="submit" class="button filter-button">Показать</button>
     </form>
 
-    <section class="catalog">
+    <section class="catalog-sort">
       <h2 class="visually-hidden">Список доступных шаблонов</h2>
-      <div>
+      <div class="sort-list">
         <span class="sort">Сортировать:</span>
+      <div class="sort-list-link">
         <a class="sort-link" >По цене</a>
         <a class="sort-link" href="#">По типу</a>
         <a class="sort-link" href="#">По названию</a>
@@ -78,22 +80,26 @@
           <a class="arrow" href="#"><span class="visually-hidden">По возрастанию</span></a>
         </div>
       </div>
+    </section>
 
-      <article class="catalog-item">
-        <a href="#">
-          <div class="catalog-item-img">
-            <img src="img/sedona.jpg" width="362" height="580" alt="Шаблон сайта путешествий Sedona">
-          </div>
-          <div class="catalog-item-card">
-            <p class="catalog-item-name">Sedona</p>
-            <p class="catalog-item-description">Информационный сайт для туристов</p>
-            <span class="button button-price-red">9900 &#8381;</span>
-          </div>
-        </a>
-      </article>
+    <section class="catalog">
+      <h2 class="visually-hidden">Список доступных шаблонов</h2>
+        <ul class="catalog-list">
+          <li class="catalog-list-item" tabindex="0">
+            <article class="catalog-item">
+            <a href="#">
+                <img class="catalog-item-img" src="img/sedona.jpg" width="362" height="580" alt="Шаблон сайта путешествий Sedona">
+                <div class="catalog-item-card">
+                  <p class="catalog-item-name">Sedona</p>
+                  <p class="catalog-item-description">Информационный сайт для туристов</p>
+                  <span class="button button-price-red">9900 &#8381;</span>
+               </div>
+           </a>
+           </article>
+       </li>
 
-
-      <article class="catalog-item">
+       <li class="catalog-list-item" tabindex="0">
+       <article class="catalog-item">
         <a href="#">
           <div class="catalog-item-img">
             <img src="img/pink.jpg" width="362" height="580" alt="Шаблон сайта PINK">
@@ -105,8 +111,9 @@
           </div>
         </a>
       </article>
+      </li>
 
-
+      <li class="catalog-list-item" tabindex="0">
       <article class="catalog-item">
         <a href="#">
           <div class="catalog-item-img">
@@ -119,8 +126,9 @@
           </div>
         </a>
       </article>
+      </li>
 
-
+      <li class="catalog-list-item" tabindex="0">
       <article class="catalog-item">
         <a href="#">
           <div class="catalog-item-img">
@@ -133,8 +141,9 @@
           </div>
         </a>
       </article>
+      </li>
 
-
+      <li class="catalog-list-item" tabindex="0">
       <article class="catalog-item">
         <a href="#">
           <div class="catalog-item-img">
@@ -147,8 +156,9 @@
           </div>
         </a>
       </article>
+      </li>
 
-
+      <li class="catalog-list-item" tabindex="0">
       <article class="catalog-item">
         <a href="#">
           <div class="catalog-item-img">
@@ -161,6 +171,8 @@
           </div>
         </a>
       </article>
+      </li>
+  </ul>
 
       <div class="page-nav">
       <ul class="page-list">
