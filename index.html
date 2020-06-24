@@ -120,18 +120,20 @@
           <title class="table-description">с 2004 года Любим точность во всем:</title>
           <ul class="advantages-table-list">
             <li class="advantages-table-item">
-              <p class="table-th">Уровень самоотдачи</p>
               <p class="table-td"> 146<sup class="procent">%</sup> </p>
+              <p class="table-th">Уровень самоотдачи</p>
               </li>
             <li class="advantages-table-item">
-              <p class="table-th">Соблюдение сроков</p>
               <p class="table-td">100<sup class="procent">%</sup></p>
+              <p class="table-th">Соблюдение сроков</p>
+
             </li>
             <li class="advantages-table-item">
-              <p class="table-th">  Минимальная предоплата</p>
               <p class="table-td">50<sup class="procent">%</sup></p>
+              <p class="table-th">  Минимальная предоплата</p>
+
             </li>
-            </ul>
+          </ul>
         </div>
       </section>
 
@@ -169,12 +171,19 @@
      <footer class="page-footer">
       <section class="address">
         <h2 class="visually-hidden">Как к нам добраться</h2>
+          <div class="contacts-map">
+        <!--<iframe class="address-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A8981a281fb55e95b223b91241095ef29fdc8ddc966459272e414e15c38f140f5&amp;source=constructor"
+          width="1440px" height="416px" title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        </iframe>-->
+          <img class="address-map" src="img/map1.jpg " width="1440px" height="416px" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        </div>
+        <img class="address-map" src="img/map1.jpg " width="1440px" height="416px" alt="">
         <div class="company-contacts wrapper">
           <p class="company-name">Nёrds Design Studio</p>
           <p class="company-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <a class="company-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
           <a class="button address-button" href="#">Напишите нам</a>
-          <!--<img src="img/map1.jpg " width="1440px" height="416px" alt="">-->
+
         </div>
       </section>
      <section class="footer-social wrapper">
@@ -182,21 +191,21 @@
       <div class="social wrapper">
         <ul class="social-list">
           <li class="social-list-item">
-            <a class="social-item link-vk" href="blank.html" aria-label="Наш паблик ВКонтакте">
+            <a class="social-item link-vk" href="blank.html" aria-label="Мы в ВКонтакте">
               <span class="visually-hidden">ВКонтакте</span>
-              <img src="img/vk-icon.svg" width="26.01px" height="15px" alt="">
+              <!--<img src="img/vk-icon.svg" width="26.01px" height="15px" alt="">-->
             </a>
           </li>
           <li class="social-list-item">
             <a class="social-item link-fb" href="blank.html" aria-label="Дружите с нами в Facebook">
               <span class="visually-hidden">Фейсбук</span>
-              <img src="img/fb-icon.svg" width="12px" height="22px" alt="">
+              <!--<img src="img/fb-icon.svg" width="12px" height="22px" alt="">-->
             </a>
           </li>
           <li class="social-list-item">
-            <a class="social-item link-insta" href="blank.html" aria-label="Смотрите наши работы в Instagram">
+            <a class="social-item link-insta" href="blank.html" aria-label="Наши работы в Instagram">
               <span class="visually-hidden">Инстаграм</span>
-              <img src="img/insta-icon.svg" width="21px" height="21px" alt="">
+            <!--  <img src="img/insta-icon.svg" width="21px" height="21px" alt="">-->
             </a>
           </li>
        </ul>
@@ -210,27 +219,28 @@
    </footer>
 
 
-   <section class="modal wrapper">
-      <h2 class="modal-name">Напишите нам</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
-
-        <div>
+   <section class="modal">
+      <h2 class="modal-name-title">Напишите нам</h2>
+      <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+  <div class="user-info">
+        <div class="user-info-feedback">
           <label class="feedback-form" for="user-name">Ваше имя:</label>
           <input class="form-example" type="text" name="user-name" id="user-name" placeholder="Имя Фамилия" required>
         </div>
 
-        <div>
+        <div class="user-info-feedback email-user">
           <label class="feedback-form" for="user-email">Ваш email:</label>
           <input class="form-example" type="email" name="user-email" id="user-email" placeholder="email@example.com" required>
         </div>
+      </div>
 
-        <div>
+        <div class="user-info-feedback">
           <label class="feedback-form" for="user-message">Текст письма:</label>
-          <textarea name="user-message" id="user-message"  placeholder="В свободной форме" required></textarea>
+          <textarea class="form-example message-user" name="user-message" id="user-message"  placeholder="В свободной форме" required></textarea>
         </div>
 
         <button class="button modal-button" type="submit">Отправить</button>
-        <button type="button" aria-label="Кнопка закрыть">Закрыть</button>
+        <button class="close-button" type="button" aria-label="Кнопка закрыть">Закрыть</button>
       </form>
     </section>
   </body>
