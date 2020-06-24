@@ -139,11 +139,9 @@ body {
     margin-left: 200px;
   }
 
-
-
-.basket {
-  padding-right: 25px;
-}
+  .basket {
+    padding-right: 25px;
+  }
 
   .logo:active {
     opacity: 0.3;
@@ -386,20 +384,13 @@ body {
 
   background-color: var(--basic-coral);
  }
-
 /*таблица*/
-
-
-
-
 
 .advantages {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
-
-
 
  .advantages-table-list {
    width: 100%;
@@ -411,8 +402,6 @@ body {
    padding-left: 0;
  }
 
-
-
  .table-description {
    margin-top: 37px;
    margin-bottom: 31px;
@@ -423,12 +412,10 @@ body {
    display: block;
  }
 
-
  .advantages-table-item {
    display: flex;
    flex-direction: column;
    border-left: 0px;
-
  }
 
  .table-th {
@@ -573,21 +560,6 @@ body {
   padding: 0;
 }
 
-.footer-slogan {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 36px;
-  margin-bottom: 10px;
-
-}
-
-.footer-text {
-  font-size: 16px;
-  line-height: 22px;
-  color: var(--basic-light-grey);
-  margin-top: 0;
-}
-
 .social-list {
   display: flex;
   flex-wrap: wrap;
@@ -646,12 +618,26 @@ body {
    background-color: var(--basic-red);
  }
 
+
  .social-item:active {
    background-color: var(--basic-dark-red);
    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
    color: rgba(255, 255, 255, 0.3);
  }
 
+.footer-slogan {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--basic-light-grey);
+  margin-top: 0;
+}
 
 /*catalog*/
 
@@ -677,7 +663,7 @@ body {
   padding-top: 56px;
   padding-bottom: 60px;
 }
-
+/*Фильтр*/
 .filter {
   display: flex;
   flex-direction: column;
@@ -690,7 +676,7 @@ body {
   box-sizing: border-box;
   margin-bottom: 15px;
 }
-
+/*диапазон цен*/
 .range-controls {
   position: relative;
   height: 80px;
@@ -712,7 +698,6 @@ body {
 .range-bar {
   width: 75%;
   height: 2px;
-
   background-color: var(--basic-green-range);
 }
 
@@ -749,7 +734,6 @@ body {
   display: flex;
   box-sizing: border-box;
   align-items: center;
-
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
@@ -762,7 +746,6 @@ body {
   margin-left: 10px;
   padding: 9px;
   box-sizing: border-box;
-
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
@@ -776,6 +759,7 @@ body {
   border-radius: 5px;
 }
 
+/*Фильтр особенностей*/
 .features-filter {
   display: flex;
   flex-direction: column;
@@ -843,7 +827,6 @@ margin-top: 15px;
   color: var(--basic-dark-grey);
 }
 
-
 .button-filter {
   width: 260px;
   font-weight: bold;
@@ -851,12 +834,10 @@ margin-top: 15px;
   color: var(--basic-black);
 }
 
-
 .button-filter:hover,
 .button-filter:focus  {
   background-color: var(--basic-medium-grey);
 }
-
 
 .button-filter:active {
   background-color: var(--basic-grey-dark);
@@ -864,7 +845,7 @@ margin-top: 15px;
   color: var(--basic-medium-grey);
 }
 
-/**/
+/*Сортировка и каталог*/
 
 .catalog-block {
   display: flex;
@@ -873,6 +854,7 @@ margin-top: 15px;
   margin: 0;
   padding: 0;
 }
+/*Сортировка*/
 .sort-list {
   margin-bottom: 48px;
   display: flex;
@@ -934,7 +916,6 @@ margin-top: 15px;
   opacity: 1;
 }
 
-
 .sort {
   margin: 0;
   font-size: 18px;
@@ -943,7 +924,6 @@ margin-top: 15px;
   text-transform: uppercase;
   color: var(--basic-black);
 }
-
 
 .sort-link-item,
 .arrow {
@@ -991,7 +971,6 @@ margin-top: 15px;
   list-style: none;
 }
 
-
 .catalog-item-link {
   position: relative;
   display: flex;
@@ -1002,7 +981,6 @@ margin-top: 15px;
   padding: 0;
   overflow: hidden;
 }
-
 
 .catalog-item-link::before {
   display: block;
@@ -1022,8 +1000,7 @@ margin-top: 15px;
 .catalog-item-link:focus::before {
   opacity: 1;
 }
-
-
+/*всплывающее окно карточки товара*/
 .catalog-item-card {
   position: absolute;
   bottom: 0;
@@ -1049,7 +1026,7 @@ margin-top: 15px;
 .catalog-item-link:focus {
   box-shadow: 0 6px 15px var(--basic-shadow);
 }
-
+/*содеожание всплывающего окна*/
 .catalog-item-name {
   margin: 0;
   margin-top: 25px;
@@ -1073,6 +1050,7 @@ margin-left: 20px;
 margin-right: 25px;
 }
 
+/*Пагинация (номера страниц)*/
 .pagination-list {
   margin-top: 49px;
   margin-bottom: 55px;
@@ -1166,15 +1144,15 @@ padding-top: 14px;
 }
 .form-example {
   width: 360px;
-height: 50px;
+  height: 50px;
   background: #FFFFFF;
-border: 2px solid #D7DCDE;
-box-sizing: border-box;
-border-radius: 3px;
-padding: 0;
-margin: 0;
-margin-top: 9px;
-margin-bottom: 34px;
+  border: 2px solid #D7DCDE;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 0;
+  margin: 0;
+  margin-top: 9px;
+  margin-bottom: 34px;
 }
 
 .email-user {
@@ -1182,7 +1160,7 @@ margin-bottom: 34px;
 }
 .message-user {
   width: 760px;
-height: 118px;
+  height: 118px;
 }
 .modal-form input::-webkit-input-placeholder {
   display: flex;
@@ -1232,10 +1210,9 @@ height: 118px;
   width: 259px;
   height: 50px;
   font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 18px;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
 }
 .close-button {
   width: 81px;
