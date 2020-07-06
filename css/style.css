@@ -237,6 +237,7 @@ img {
 
 /* слайдер*/
 
+
 .promo-slider{
   background-color: var(--basic-white-grey);
   position: relative;
@@ -259,7 +260,7 @@ img {
   display: block;
 }
 
-.slider1 {
+.slider1  {
   background-image: url("../img/index1.png");
   background-size: 760px 431px;
   background-repeat: no-repeat;
@@ -651,7 +652,7 @@ img {
   }
   .contacts {
     position: relative;
-    width: auto;
+    width:100%;
     margin: 0;
     padding-top: 54px;
     padding-bottom: 54px;
@@ -715,13 +716,6 @@ img {
     padding: 16px 44px;
   }
 
-  .map-marker-img {
-    position: absolute;
-    top: 86px;
-    right: 427px;
-    width: 231px;
-    height: 190px;
-  }
 
 
 
@@ -825,16 +819,14 @@ img {
 
   /*catalog*/
 
-
-  .catalog-page-header {
-    min-height: 355px;
+  .main-catalog {
+    min-height: 228px;
+    background-color: var(--basic-white-grey);
   }
-
-
   .catalog-title {
     margin: 0;
     padding: 0;
-    margin-top: 78px;
+    padding-top: 64px;
     margin-bottom: 107px;
     margin-left: 208px;
     margin-right: 210px;
@@ -842,7 +834,6 @@ img {
     line-height: 55px;
     font-weight: 500;
     color: var(--basic-black);
-    background-color: var(--basic-white-grey);
   }
 
   .main-page-catalog {
@@ -938,7 +929,8 @@ img {
   }
 
   .range-controls .range-bar {
-    width: 70%;
+    margin-left: 5px;
+    width: 138px;
     height: 2px;
     background-color: var(--basic-green-range);
   }
@@ -956,14 +948,15 @@ img {
   }
 
   .range-controls .range-min {
-    margin-left: 0px;
+    margin-left: 18px;
     left: 0;
   }
 
   .range-controls .range-max {
-    margin-right: 12px;
+    margin-right: 80px;
     right: 0;
   }
+
 
   .number-controls {
     display: flex;
@@ -1318,8 +1311,8 @@ img {
   }
   .pagination-item {
     margin-right: 11px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+/*    margin-top: 5px;*/
+  /*  margin-bottom: 5px;*/
     border: none;
   }
 
