@@ -11,7 +11,6 @@
 
 <body class="page-body">
     <header class="page-header">
-
         <nav class="header-nav wrapper">
             <a class="logo">
                 <svg width="160" height="65" viewBox="0 0 160 66" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,21 +47,20 @@
                         <p class="slider-slogan">Долго, дорого, скрупулезно.</p>
                         <p class="slider-description">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
                         <a class="button btn-slider" href="">Узнать больше</a>
-
                     </li>
+
                     <li class="slider-item slider2">
                         <p class="slider-slogan">Любим математику как никто другой</p>
                         <p class="slider-description slider-description-slider2">
                             Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
                         <a class="button btn-slider" href="">Узнать больше</a>
-
                     </li>
+
                     <li class="slider-item slider3">
                         <p class="slider-slogan">Только ночь,<br> только хардкор</p>
                         <p class="slider-description slider-description-slider3">
                             Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
                         <a class="button btn-slider" href="">Узнать больше</a>
-
                     </li>
                 </ul>
 
@@ -72,11 +70,13 @@
                           <span class="visually-hidden">Слайд 1</span>
                         </button>
                     </li>
+
                     <li class="control-list-item">
                         <button class="slider-control slide slide--2" type="button" aria-label="Слайд 2">
                           <span class="visually-hidden">Слайд 2</span>
                         </button>
                     </li>
+
                     <li class="control-list-item">
                         <button class="slider-control slide slide--3" type="button" aria-label="Слайд 3">
                           <span class="visually-hidden">Слайд 3</span>
@@ -123,7 +123,6 @@
             <div class="about-company about-company-description">
                 <p class="about-us-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
                 <p class="about-us-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-
                 <p class="order-title">Выполняем заказы на разработку:</p>
                 <ul class="order-title-list">
                     <li class="order-title-item">Веб-сайтов любой сложности</li>
@@ -203,19 +202,16 @@
                 <li class="social-list-item">
                     <a class="social-item link-vk" href="blank.html" aria-label="Мы в ВКонтакте">
                         <span class="visually-hidden">ВКонтакте</span>
-
                     </a>
                 </li>
                 <li class="social-list-item">
                     <a class="social-item link-fb" href="blank.html" aria-label="Дружите с нами в Facebook">
                         <span class="visually-hidden">Фейсбук</span>
-
                     </a>
                 </li>
                 <li class="social-list-item">
                     <a class="social-item link-insta" href="blank.html" aria-label="Наши работы в Instagram">
                         <span class="visually-hidden">Инстаграм</span>
-
                     </a>
                 </li>
             </ul>
@@ -230,23 +226,24 @@
     <section class="modal modal-feedback">
         <h2 class="modal-name-title">Напишите нам</h2>
         <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-            <div class="user-info">
+            <div class="modal-form-info">
+                <div class="user-info">
+                    <div class="user-info-feedback">
+                        <label class="feedback-form feedback-form-name" for="user-name">Ваше имя:</label>
+                        <input class="form-example" type="text" name="user-name" id="user-name" placeholder="Имя Фамилия" required>
+                    </div>
+
+                    <div class="user-info-feedback email-user">
+                        <label class="feedback-form feedback-form-email" for="user-email">Ваш email:</label>
+                        <input class="form-example" type="email" name="user-email" id="user-email" placeholder="email@example.com" required>
+                    </div>
+                </div>
+
                 <div class="user-info-feedback">
-                    <label class="feedback-form feedback-form-name" for="user-name">Ваше имя:</label>
-                    <input class="form-example" type="text" name="user-name" id="user-name" placeholder="Имя Фамилия" required>
-                </div>
-
-                <div class="user-info-feedback email-user">
-                    <label class="feedback-form feedback-form-email" for="user-email">Ваш email:</label>
-                    <input class="form-example" type="email" name="user-email" id="user-email" placeholder="email@example.com" required>
+                    <label class="feedback-form" for="user-message">Текст письма:</label>
+                    <textarea class="form-example message-user" name="user-message" id="user-message" placeholder="В свободной форме" required></textarea>
                 </div>
             </div>
-
-            <div class="user-info-feedback">
-                <label class="feedback-form" for="user-message">Текст письма:</label>
-                <textarea class="form-example message-user" name="user-message" id="user-message" placeholder="В свободной форме" required></textarea>
-            </div>
-
             <button class="button modal-button" type="submit">Отправить</button>
             <button class="close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
         </form>
