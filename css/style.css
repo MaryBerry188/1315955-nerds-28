@@ -1487,6 +1487,8 @@ img {
 .message-user {
     width: 760px;
     height: 118px;
+    padding-top: 15px;
+    padding-left: 15px;
 }
 
 .modal-form input::-webkit-input-placeholder {
@@ -1526,8 +1528,6 @@ img {
     line-height: 18px;
     color: var(--basic-light-grey);
     opacity: 0.5;
-    padding-left: 4px;
-    padding-top: 16px;
 }
 
 .form-example {
