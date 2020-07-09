@@ -5,7 +5,7 @@ var modalForm = modalFeedback.querySelector(".modal-form");
 var modalLogin = modalFeedback.querySelector("[name=user-name]");
 var modalEmail = modalFeedback.querySelector("[name=user-mail]");
 var modalMessage = modalFeedback.querySelector("[name=user-message]");
-let btnSubmitModal = document.querySelector(".modal-button");
+var btnSubmitModal = document.querySelector(".modal-button");
 var isStorageSupport = true;
 var storageName = "";
 var storageEmail = "";
