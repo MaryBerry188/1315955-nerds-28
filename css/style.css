@@ -28,6 +28,7 @@
     --basic-sort-light-grey: #A6A6A6;
     --basic-checkbox-grey: #4D4D4D;
     --basic-pag-gray: #dbdbdb;
+    --basic-hover-modal: #B4B9BB;
 }
 
 .visually-hidden {
@@ -989,10 +990,11 @@ img {
 }
 
 .price-filter-number {
-    width: 62px;
-    height: 36px;
+    width: 80px;
+    height: 38px;
+    margin: 0;
+    padding: 0;
     margin-left: 10px;
-    padding-left: 15px;
     line-height: 22px;
     text-transform: uppercase;
     border: none;
@@ -1019,15 +1021,16 @@ img {
     position: absolute;
     top: -4px;
     left: 0;
+    background-image: url("../img/radio-off.svg");
     opacity: 0.4;
 }
 
 .filter-radio:not(:checked)+label::before {
-    background-image: url('../img/radio-off.svg');
+    background-image: url("../img/radio-off.svg");
 }
 
 .filter-radio:checked+label::before {
-    background-image: url('../img/radio-on.svg');
+    background-image: url("../img/radio-on.svg");
 }
 
 .filter-checkbox+label::before {
@@ -1039,18 +1042,18 @@ img {
     background-repeat: no-repeat;
     top: -2px;
     left: 0;
-    background-image: url('../img/checkbox-off.svg');
+    background-image: url("../img/checkbox-off.svg");
     opacity: 0.4;
 }
 
 .filter-checkbox:not(:checked)+label::before {
-    background-image: url('../img/checkbox-off.svg');
+    background-image: url("../img/checkbox-off.svg");
 }
 
 .filter-checkbox:checked+label::before {
     width: 26px;
     height: 23px;
-    background-image: url('../img/checkbox-on.svg');
+    background-image: url("../img/checkbox-on.svg");
 }
 
 .filter-radio+label:hover::before,
@@ -1395,34 +1398,31 @@ img {
 /*popup*/
 
 .modal {
-    margin: 0 auto;
-    width: 760px;
+    display: none;
+    z-index: 2;
+    position: fixed;
+    left: calc(50% - 480px);
+    top: calc(50% - 295px);
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 960px;
+    min-height: 590px;
+    box-sizing: border-box;
     padding-top: 63px;
     padding-left: 100px;
     padding-bottom: 84px;
     padding-right: 100px;
-    display: none;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    right: 0;
     background-color: var(--basic-white);
     box-shadow: 10px 20px 40px var(--basic-shadow);
-    z-index: 2;
+    animation: bounce 0.6s;
 }
 
 .modal-show {
-    display: block;
-    -webkit-animation-name: zoom-in;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom-in;
-    animation-duration: 0.6s;
+    display: flex;
 }
 
 .modal-error {
-    display: block;
-    -webkit-animation: shake 0.6s;
     animation: shake 0.6s;
 }
 
@@ -1437,7 +1437,8 @@ img {
 .user-info {
     display: flex;
     flex-direction: row;
-    margin-top: 37px;
+    margin: 0;
+    padding: 0;
 }
 
 .user-info-feedback {
@@ -1461,11 +1462,16 @@ img {
     align-items: center;
 }
 
+.modal-form-info {
+    box-sizing: border-box;
+    padding-bottom: 15px;
+}
+
 .form-example {
     width: 360px;
     height: 50px;
-    background: #FFFFFF;
-    border: 2px solid #D7DCDE;
+    background: var(--basic-white);
+    border: 2px solid var(--basic-scale-grey);
     box-sizing: border-box;
     border-radius: 3px;
     padding: 0;
@@ -1504,12 +1510,12 @@ img {
 
 .modal-form input:hover,
 .modal-form textarea:hover {
-    border: 2px solid #B4B9BB;
+    border: 2px solid var(--basic-hover-modal);
 }
 
 .modal-form input:focus,
 .modal-form textarea:focus {
-    border: 2px solid #000000;
+    border: 2px solid var(--basic-black);
 }
 
 .modal-form textarea::-webkit-input-placeholder {
@@ -1518,9 +1524,9 @@ img {
     font-family: Roboto;
     font-size: 16px;
     line-height: 18px;
-    color: #444444;
+    color: var(--basic-light-grey);
     opacity: 0.5;
-    padding-left: 16px;
+    padding-left: 4px;
     padding-top: 16px;
 }
 
@@ -1530,8 +1536,11 @@ img {
     padding-left: 15px;
 }
 
-.message-user {
-    padding-top: 16px;
+textarea.message-user {
+    display: block;
+    resize: none;
+    width: 100%;
+    height: 118px;
 }
 
 .modal-button {
@@ -1571,36 +1580,18 @@ img {
 
 /* Animations */
 
-@-webkit-keyframes zoom-in {
-    from {
-        -webkit-transform: scale(0)
-    }
-    to {
-        -webkit-transform: scale(1)
-    }
-}
-
-@keyframes zoom-in {
-    from {
-        transform: scale(0)
-    }
-    to {
-        transform: scale(1)
-    }
-}
-
 @keyframes bounce {
     0% {
-        transform: translateY(-2000px);
+        transform: translateX(2000px);
     }
     70% {
-        transform: translateY(30px);
+        transform: translateX(-30px);
     }
     90% {
-        transform: translateY(-10px);
+        transform: translateX(10px);
     }
     100% {
-        transform: translateY(0);
+        transform: translateX(0);
     }
 }
 
